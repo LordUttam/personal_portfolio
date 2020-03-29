@@ -41,28 +41,29 @@
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item grow">
             <a class="nav-link" href="{% static "portfolio/Resume.pdf" %}" target="_blank">Resume</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item grow">
             <a class="nav-link" href="https://github.com/LordUttam" target="_blank">GitHub</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item grow">
             <a class="nav-link" href="https://www.linkedin.com/in/uttam-sharma-55a588178/" target="_blank">LinkedIn</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item grow">
             <a class="nav-link" href="https://twitter.com/SharmajiUttam" target="_blank">Twitter</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item grow">
             <a class="nav-link" href="https://www.instagram.com/cleverlystewpid/" target="_blank">Instagram</a>
           </li>
           <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary button2">Blog</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <div class="container">
     {% block content %}{% endblock %}
   <br><br><hr>
